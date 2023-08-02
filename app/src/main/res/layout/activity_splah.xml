@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplahActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/animation_background"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sp_plus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plus_button"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="100dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sp_multiplied"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/multiplied_button"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sp_divided"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/divided_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sp_mines"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/mines_button"
+        android:layout_marginTop="250dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"/>
+
+</RelativeLayout>
