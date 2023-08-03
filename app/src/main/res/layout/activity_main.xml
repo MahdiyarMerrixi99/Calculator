@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -19,7 +20,7 @@
         android:layout_marginBottom="12dp"
         android:layoutDirection="ltr"
         android:text=""
-        android:textColor="@color/black"
+        android:textColor="@color/hi"
         android:textSize="28dp"
         android:textStyle="bold" />
 
@@ -60,10 +61,11 @@
                 android:id="@+id/exit"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#FFEB3B"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
                 android:text="Don't click"
+                android:textColor="@color/Exit"
                 android:layout_weight="0.25"/>
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/fun"
@@ -88,7 +90,7 @@
                 android:layout_weight="0.25"
                 android:background="@drawable/numbers_shape"
                 android:text="%"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -102,7 +104,7 @@
                 android:backgroundTint="#FFC107"
                 android:text="/"
                 android:textColor="@color/white"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
 
@@ -127,7 +129,7 @@
                 android:layout_weight="0.25"
                 android:background="@drawable/numbers_shape"
                 android:text="7"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -139,7 +141,7 @@
                 android:layout_weight="0.25"
                 android:background="@drawable/numbers_shape"
                 android:text="8"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -151,7 +153,7 @@
                 android:layout_weight="0.25"
                 android:background="@drawable/numbers_shape"
                 android:text="9"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -165,7 +167,7 @@
                 android:backgroundTint="#FFC107"
                 android:text="*"
                 android:textColor="@color/white"
-                android:textSize="28dp"
+                android:textSize="@dimen/x7"
                 android:textStyle="bold" />
 
 
