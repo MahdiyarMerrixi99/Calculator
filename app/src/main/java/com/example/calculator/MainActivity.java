@@ -177,8 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 rhino.setOptimizationLevel(-1);
                 String finalResult = "";
                 Scriptable scriptable = rhino.initStandardObjects();
-                finalResult = rhino.evaluateString(scriptable, data, "Javsscript", 1, null).toString();
-
+                finalResult = String.valueOf(Double.parseDouble(rhino.evaluateString(scriptable, data, "Javsscript", 1, null).toString()));
                 binding.outputText.setText(finalResult);
             }
         });
