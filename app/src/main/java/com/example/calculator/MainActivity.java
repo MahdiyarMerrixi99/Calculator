@@ -175,10 +175,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Context rhino = Context.enter();
                 rhino.setOptimizationLevel(-1);
-                String finalResult = "";
+                double finalResult;
                 Scriptable scriptable = rhino.initStandardObjects();
-                finalResult = String.valueOf(Double.parseDouble(rhino.evaluateString(scriptable, data, "Javsscript", 1, null).toString()));
-                binding.outputText.setText(finalResult);
+                finalResult= Double.parseDouble(String.valueOf(Double.parseDouble(rhino.evaluateString(scriptable, data, "Javsscript", 1, null).toString())));
+                String str = String.format("%.6f", finalResult );
+                binding.outputText.setText(str);
             }
         });
     }
